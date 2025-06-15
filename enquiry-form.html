@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Send Enquiry</title>
+  <style>
+    body {
+      background-color: #aaa;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background-color: #ccc;
+      padding: 25px;
+      border-radius: 10px;
+      width: 320px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    input::placeholder {
+      color: #888;
+    }
+    button {
+      background-color: #1a73e8;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0c5fc3;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://formsubmit.co/Salmanhasan1927@gmail.com" method="POST">
+    <h2>Send Enquiry Now</h2>
+
+    <input type="text" name="name" placeholder="Enter your name" required>
+    <input type="email" name="email" placeholder="Enter your Email" required>
+    <input type="tel" name="contact" placeholder="Enter your Contact Number" required>
+    <input type="text" name="date" placeholder="Date">
+    <input type="number" name="adults" placeholder="Adults" min="0">
+    <input type="number" name="kids" placeholder="Kids" min="0">
+
+    <!-- Hidden fields -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://google.com"> <!-- Change to your thank you page if needed -->
+
+    <button type="submit">Send Enquiry</button>
+  </form>
+</body>
+</html>
